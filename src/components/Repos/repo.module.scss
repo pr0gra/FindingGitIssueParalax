@@ -1,0 +1,61 @@
+// @import url("../../reset/reset.scss");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.paragparhs {
+  text-decoration: none;
+  color: white;
+  p {
+    text-shadow: 0 0 15px #817355;
+    line-height: 20px;
+    text-align: left;
+  }
+  border: 1px solid #776c54;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.repositories {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.repos-data {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-paragraph {
+  text-shadow: 0 0 15px #817355;
+  border: 1px solid #776c54;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.container-for-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.next-and-perv {
+  all: unset;
+  text-shadow: 0 0 15px #817355;
+  border: 1px solid #776c54;
+  border-radius: 20px;
+  padding: 10px 10px;
+  align-items: center;
+
+  gap: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
