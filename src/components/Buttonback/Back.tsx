@@ -1,5 +1,6 @@
-import React from "react";
 import styles from "./Back.module.scss";
+import backImg from "../../assets/back.svg";
+import forwardImg from "../../assets/forward.svg";
 
 export function Back() {
   return (
@@ -10,7 +11,7 @@ export function Back() {
           history.back();
         }}
       >
-        <img src="/src/assets/back.svg" alt="Обратно" />
+        <img src={backImg} alt="Обратно" />
       </div>
       <div
         className={styles["button-back"]}
@@ -18,7 +19,7 @@ export function Back() {
           history.go(1);
         }}
       >
-        <img src="/src/assets/forward.svg" alt="Обратно" />
+        <img src={forwardImg} alt="Обратно" />
       </div>
     </div>
   );
