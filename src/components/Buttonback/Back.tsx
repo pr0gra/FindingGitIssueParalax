@@ -11,7 +11,7 @@ export function Back() {
           history.back();
         }}
       >
-        <img src={backImg} alt="Обратно" />
+        <img className={styles["backImg"]} src={backImg} alt="backImg" />
       </div>
       <div
         className={styles["button-back"]}
@@ -19,7 +19,11 @@ export function Back() {
           history.go(1);
         }}
       >
-        <img src={forwardImg} alt="Обратно" />
+        <img
+          className={styles["forwardImg"]}
+          src={forwardImg}
+          alt="forwardImg"
+        />
       </div>
     </div>
   );
