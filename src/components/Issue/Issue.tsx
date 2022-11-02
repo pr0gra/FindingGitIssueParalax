@@ -9,10 +9,6 @@ import { IssueText } from "../IssueText/IssueText";
 interface Issue {
   login: string;
 }
-interface Content {
-  title: string;
-  body: string;
-}
 
 export function Issue({ login }: Issue) {
   const { issue } = useParams();
@@ -30,8 +26,8 @@ export function Issue({ login }: Issue) {
       {!data ? <Loading /> : null}
       {data?.length !== 0 ? <Back /> : null}
       <div className={styles["issues"]}>
-        {data?.map((i: Content, index: number) => {
-          return <IssueText dataElem={i} key={index} />;
+        {data?.map((item, index: number) => {
+          return <IssueText dataElem={item} key={index} />;
         })}
 
         {data?.length === 0 ? (
